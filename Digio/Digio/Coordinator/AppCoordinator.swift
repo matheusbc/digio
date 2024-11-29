@@ -7,10 +7,9 @@
 
 import UIKit
 
-class AppCoordinator: Coordinator {
-    // MARK: Public variables
-    var partent: Coordinator?
-    var childs: [Coordinator] = []
+/// App main coordinator.
+class AppCoordinator: CoordinatorProtocol, ProductDetailsProtocol {
+    // MARK: Public properties
     var navigationController: UINavigationController
 
     // MARK: Initializer
@@ -19,27 +18,25 @@ class AppCoordinator: Coordinator {
     }
 
     // MARK: - Public functions
+    /// Start the first app view controller (HomeViewController).
     func start() {
-        goToHome()
+        showHome()
     }
 
     // MARK: Navigation functions
-    func goToHome() {
+    /// Show home screen (push to the navigation controller).
+    func showHome() {
         let viewModel = HomeViewModel()
         viewModel.coordinator = self
         let viewController = HomeViewController(viewModel: viewModel)
         navigationController.pushViewController(viewController, animated: true)
-        viewModel.openProductDetails()
     }
 
-    func goToProductDetails() {
-        let viewModel = ProductDetailsViewModel()
+    /// Show product details screen (push to the navigation controller).
+    func showProductDetails(for product: ProductItem) {
+        let viewModel = ProductDetailsViewModel(product: product)
         viewModel.coordinator = self
         let viewController = ProductDetailsViewController(viewModel: viewModel)
         navigationController.pushViewController(viewController, animated: true)
-    }
-
-    func goBack() {
-        navigationController.popViewController(animated: true)
     }
 }
