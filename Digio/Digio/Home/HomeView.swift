@@ -119,7 +119,6 @@ class HomeView: UIView {
         let label = UILabel()
         label.contentMode = .left
         label.setContentCompressionResistancePriority(UILayoutPriority(749), for: .horizontal)
-        label.text = "Olá, Matheus!"
         label.textAlignment = .natural
         label.lineBreakMode = .byTruncatingTail
         label.baselineAdjustment = .alignBaselines

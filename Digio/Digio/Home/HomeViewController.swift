@@ -43,8 +43,6 @@ class HomeViewController: UIViewController {
         homeView.setSpotlightDataSource(self)
         homeView.setCashDataSource(self)
         homeView.setProductDataSource(self)
-//        homeView.setSpotlightDelegate(self)
-//        homeView.setCashDataDelegate(self)
         homeView.setProductDelegate(self)
     }
 

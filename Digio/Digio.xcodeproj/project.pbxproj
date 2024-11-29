@@ -21,7 +21,6 @@
 		A4752CE52CF7CE8E0067A567 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4752CD22CF7CE8E0067A567 /* AppDelegate.swift */; };
 		A4752CE72CF7CE8E0067A567 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4752CD32CF7CE8E0067A567 /* Assets.xcassets */; };
 		A4752CE92CF7CE8E0067A567 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4752CD62CF7CE8E0067A567 /* LaunchScreen.storyboard */; };
-		A4752CEC2CF7CEA20067A567 /* DigioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4752CEA2CF7CEA20067A567 /* DigioTests.swift */; };
 		A4752CF02CF7CEA60067A567 /* DigioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4752CED2CF7CEA60067A567 /* DigioUITests.swift */; };
 		A4752CF12CF7CEA60067A567 /* DigioUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4752CEE2CF7CEA60067A567 /* DigioUITestsLaunchTests.swift */; };
 		A4752CF32CF8D2AE0067A567 /* HomeItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4752CF22CF8D2A40067A567 /* HomeItemCell.swift */; };
@@ -84,7 +83,6 @@
 		A4752CD32CF7CE8E0067A567 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4752CD42CF7CE8E0067A567 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4752CD52CF7CE8E0067A567 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A4752CEA2CF7CEA20067A567 /* DigioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigioTests.swift; sourceTree = "<group>"; };
 		A4752CED2CF7CEA60067A567 /* DigioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigioUITests.swift; sourceTree = "<group>"; };
 		A4752CEE2CF7CEA60067A567 /* DigioUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigioUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A4752CF22CF8D2A40067A567 /* HomeItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItemCell.swift; sourceTree = "<group>"; };
@@ -233,7 +231,6 @@
 			children = (
 				A4752D382CFA59A80067A567 /* ProductDetails */,
 				A4752D292CFA47770067A567 /* Coordinator */,
-				A4752CEA2CF7CEA20067A567 /* DigioTests.swift */,
 			);
 			path = DigioTests;
 			sourceTree = "<group>";
@@ -589,7 +586,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4752CEC2CF7CEA20067A567 /* DigioTests.swift in Sources */,
 				A4752D2B2CFA47880067A567 /* MockNavigationController.swift in Sources */,
 				A4752D2D2CFA485C0067A567 /* AppCoordinatorTests.swift in Sources */,
 				A4752D3A2CFA59B90067A567 /* ProductDetailsViewModelTests.swift in Sources */,
