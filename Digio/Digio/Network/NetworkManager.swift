@@ -22,7 +22,6 @@ class NetworkManager: NetworkManagerProtocol {
         if let headers = config.headers {
             for (header, value) in headers {
                 request.setValue(value, forHTTPHeaderField: header)
-
             }
         }
 
